@@ -15,8 +15,8 @@
 		6A995E471D73C1A100EE12DF /* CarInspectionCertificateTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E451D73C1A100EE12DF /* CarInspectionCertificateTableViewController.swift */; };
 		6A995E481D73C1A100EE12DF /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E461D73C1A100EE12DF /* MainViewController.swift */; };
 		6A995E4A1D73C1B600EE12DF /* CarInspectionCertificateItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A995E491D73C1B600EE12DF /* CarInspectionCertificateItemCell.swift */; };
-		6A995E4D1D73C44600EE12DF /* CarQRCodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A995E4C1D73C44600EE12DF /* CarQRCodeScanner.framework */; };
 		6A995E4E1D73C44600EE12DF /* CarQRCodeScanner.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6A995E4C1D73C44600EE12DF /* CarQRCodeScanner.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		DA6B9DAB214D7854009B3891 /* CarQRCodeScanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6B9DAA214D7854009B3891 /* CarQRCodeScanner.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,7 +34,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		6A995E2C1D73C0E200EE12DF /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A995E2C1D73C0E200EE12DF /* QRReaderExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QRReaderExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A995E2F1D73C0E200EE12DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A995E341D73C0E200EE12DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6A995E361D73C0E200EE12DF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,6 +45,7 @@
 		6A995E461D73C1A100EE12DF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MainViewController.swift; path = ViewController/MainViewController.swift; sourceTree = "<group>"; };
 		6A995E491D73C1B600EE12DF /* CarInspectionCertificateItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CarInspectionCertificateItemCell.swift; path = View/CarInspectionCertificateItemCell.swift; sourceTree = "<group>"; };
 		6A995E4C1D73C44600EE12DF /* CarQRCodeScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarQRCodeScanner.framework; path = ../../Carthage/Build/iOS/CarQRCodeScanner.framework; sourceTree = "<group>"; };
+		DA6B9DAA214D7854009B3891 /* CarQRCodeScanner.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CarQRCodeScanner.framework; path = Carthage/Build/iOS/CarQRCodeScanner.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6A995E4D1D73C44600EE12DF /* CarQRCodeScanner.framework in Frameworks */,
+				DA6B9DAB214D7854009B3891 /* CarQRCodeScanner.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,13 +65,14 @@
 			children = (
 				6A995E2E1D73C0E200EE12DF /* Example */,
 				6A995E2D1D73C0E200EE12DF /* Products */,
+				DA6B9DA9214D7854009B3891 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		6A995E2D1D73C0E200EE12DF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6A995E2C1D73C0E200EE12DF /* Example.app */,
+				6A995E2C1D73C0E200EE12DF /* QRReaderExample.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,12 +126,20 @@
 			name = Framework;
 			sourceTree = "<group>";
 		};
+		DA6B9DA9214D7854009B3891 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA6B9DAA214D7854009B3891 /* CarQRCodeScanner.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		6A995E2B1D73C0E200EE12DF /* Example */ = {
+		6A995E2B1D73C0E200EE12DF /* QRReaderExample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6A995E3E1D73C0E200EE12DF /* Build configuration list for PBXNativeTarget "Example" */;
+			buildConfigurationList = 6A995E3E1D73C0E200EE12DF /* Build configuration list for PBXNativeTarget "QRReaderExample" */;
 			buildPhases = (
 				6A995E281D73C0E200EE12DF /* Sources */,
 				6A995E291D73C0E200EE12DF /* Frameworks */,
@@ -141,9 +151,9 @@
 			);
 			dependencies = (
 			);
-			name = Example;
+			name = QRReaderExample;
 			productName = Example;
-			productReference = 6A995E2C1D73C0E200EE12DF /* Example.app */;
+			productReference = 6A995E2C1D73C0E200EE12DF /* QRReaderExample.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -158,11 +168,12 @@
 				TargetAttributes = {
 					6A995E2B1D73C0E200EE12DF = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = X85VXFU9Y4;
 						LastSwiftMigration = 0800;
 					};
 				};
 			};
-			buildConfigurationList = 6A995E271D73C0E200EE12DF /* Build configuration list for PBXProject "Example" */;
+			buildConfigurationList = 6A995E271D73C0E200EE12DF /* Build configuration list for PBXProject "QRReaderExample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -175,7 +186,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6A995E2B1D73C0E200EE12DF /* Example */,
+				6A995E2B1D73C0E200EE12DF /* QRReaderExample */,
 			);
 		};
 /* End PBXProject section */
@@ -201,6 +212,7 @@
 			);
 			inputPaths = (
 				"$(SRCROOT)/../Carthage/Build/iOS/ZXingObjC.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CarQRCodeScanner.framework",
 			);
 			outputPaths = (
 			);
@@ -351,10 +363,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
+				DEVELOPMENT_TEAM = X85VXFU9Y4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.smartdrive.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = "kyo-s.CarQrReader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -364,10 +381,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				FRAMEWORK_SEARCH_PATHS = "$(PROJECT_DIR)/../Carthage/Build/iOS";
+				DEVELOPMENT_TEAM = X85VXFU9Y4;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/../Carthage/Build/iOS",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = Example/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = jp.co.smartdrive.Example;
+				PRODUCT_BUNDLE_IDENTIFIER = "kyo-s.CarQrReader";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 			};
@@ -376,7 +398,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		6A995E271D73C0E200EE12DF /* Build configuration list for PBXProject "Example" */ = {
+		6A995E271D73C0E200EE12DF /* Build configuration list for PBXProject "QRReaderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A995E3C1D73C0E200EE12DF /* Debug */,
@@ -385,7 +407,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		6A995E3E1D73C0E200EE12DF /* Build configuration list for PBXNativeTarget "Example" */ = {
+		6A995E3E1D73C0E200EE12DF /* Build configuration list for PBXNativeTarget "QRReaderExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				6A995E3F1D73C0E200EE12DF /* Debug */,
